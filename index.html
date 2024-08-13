@@ -11,7 +11,7 @@
 
     <meta property="og:title" content="Shlok Kokate | Developer">
     <meta property="og:description" content="Personal profile of Shlok Kokate, A Java Programmer and Basic Web Developer">
-    <meta property="og:image" content="https://cdn.discordapp.com/avatars/722854351600615465/e2c57522c1af0a3fb4d34df33e68bac3.png?size=2048">
+    <meta property="og:image" content="https://ashisheditz.com/chill-anime-pfp-boy-aesthetic-discord-wallpaper-4k/" >
 
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&amp;display=swap" rel="stylesheet">
@@ -57,7 +57,6 @@
                         <div data-mode="green" id="green-mode" class="theme-dot"></div>
                         <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
-
 
                     <p id="settings-note">
                         *Theme settings will be saved for<br>your next visit
@@ -225,10 +224,47 @@
             </h6>
         </div>
     </section>
-    </body>
 
 
 <script src="js/script.js"></script>
 <script src="js/mail.js"></script>
 <script src="js/buttons.js"></script>
-</html>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
