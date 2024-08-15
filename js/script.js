@@ -32,7 +32,7 @@ function setTheme(mode) {
     }
 
     if (mode === "blue") {
-        theme.href = "styles/blue.css"
+        theme.href = "styles/Blue.css"
         githubStat.src = githubStats + "&theme=tokyonight"
         githubStreak.src = githubStreaks + "&theme=tokyonight"
         heart.innerHTML = "💙"
